@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
   /* TW Teal 600, 100*/
   --color-main: #0d9488;
   --color-accent: cyan;
   --color-bg: #ccfbf1;
+
+  font-family: 'Poppins';
 }
 
 * {
   margin: 0;
   padding: 0;
+  /* border: 1px solid black; */
+}
+
+span.material-icons,
+span.material-icons-outlined {
+  font-size: 36px;
 }
 
 
@@ -18,14 +27,24 @@
   height: 100vh;
   display: grid;
   grid-template: 140px 1fr / 250px 1fr;
+  
 }
 
 .sidebar {
+  color: white;
   background-color: var(--color-main);
   grid-row: 1 / -1;
 
   display: grid;
-  grid-template-rows: 80px 1fr;
+  grid-template-rows: 80px repeat(9, 40px);
+
+  padding: 24px;
+}
+
+.sidebar>div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header {
@@ -37,8 +56,3 @@
 }
 
 
-
-
-li:nth-child(7) {
-  margin-top: 40px;
-}
