@@ -1,0 +1,33 @@
+
+:root {
+  --color-main: #7bae37;
+  --color-accent: cyan;
+  --color-bg: #f2f2f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template: 140px 1fr / 250px 1fr;
+}
+
+.sidebar {
+  background-color: var(--color-main);
+  grid-row: 1 / -1;
+}
+
+.header {
+  grid-column: 2;
+}
+
+.main-content {
+  background-color: var(--color-bg)
+}
