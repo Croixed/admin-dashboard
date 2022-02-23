@@ -57,8 +57,12 @@ span.material-icons-outlined {
   grid-template: 2fr 3fr / 1fr 340px;
 }
 
-.search>input {
+#search-bar {
   width: 90%;
+  background-color: rgb(231, 231, 231);
+  height: 24px;
+  border-radius: 24px; 
+  border-width: 0px;
 }
 
 .search,
@@ -69,10 +73,15 @@ span.material-icons-outlined {
   align-items: center;
 }
 
+.search {
+  margin-top: 10px;
+}
+
 .account {
   justify-content: space-around;
   margin-right: 20px;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .buttons {
@@ -82,13 +91,18 @@ span.material-icons-outlined {
 button {
   font-size: 1rem;
   font-weight: bold;
-  padding: 3px 18px;
+  width: 80px;
+  height: 32px;
   border-radius: 18px;
 }
 
 .search,
 .user-info {
   margin-left: 20px;
+}
+
+.search>span {
+  margin-right: 15px;
 }
 
 .user-info {
@@ -100,10 +114,6 @@ button {
   border-radius: 50%;
 }
 
-
-.user-info {
-}
-
 .info-pfp {
   width: 60px;
   border-radius: 50%;
@@ -111,8 +121,27 @@ button {
 
 
 
+
+
+
+
 .main-content {
-  background-color: var(--color-bg)
+  background-color: var(--color-bg);
+
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.projects,
+.announcements,
+.trending {
+  background-color: white;
+}
+
+.projects {
+  grid-row: 1 / -1;
 }
 
 
