@@ -39,6 +39,7 @@ span.material-icons-outlined {
   grid-template-rows: 80px repeat(9, 40px);
 
   padding: 24px;
+  z-index: 1;
 }
 
 .sidebar>div {
@@ -55,6 +56,9 @@ span.material-icons-outlined {
   grid-column: 2;
   display: grid;
   grid-template: 2fr 3fr / 1fr 340px;
+
+  z-index: 1;
+  box-shadow: rgba(37, 37, 37, 0.6) 0 0 8px 0;
 }
 
 #search-bar {
@@ -159,7 +163,20 @@ button {
   border-radius: 9px;
 }
 
+.project-card-title {
+  font-weight: bold;
+}
 
+.project-card-content {
+  font-size: 0.9em;
+  color: rgb(77, 77, 77);
+}
+
+.project-card,
+.trending-card,
+.announcements-card {
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 3px 4px;
+}
 
 
 
@@ -183,6 +200,9 @@ button {
   margin-right: 20px;
 }
 
+
+
 .trending-card {
-  margin-bottom: 44px;
+  /* margin-bottom: 44px; */
+  height: 238px;
 }
