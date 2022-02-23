@@ -134,7 +134,7 @@ button {
   background-color: var(--color-bg);
 
   display: grid;
-  grid-template: 40vh 1fr / 1fr 260px; /*3fr 1fr; */
+  grid-template: 342px 1fr / 1fr 260px; /*3fr 1fr; */
 }
 
 .projects>*+*,
