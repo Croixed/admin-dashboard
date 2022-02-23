@@ -94,6 +94,7 @@ button {
   width: 80px;
   height: 32px;
   border-radius: 18px;
+  border-width: 0px;
 }
 
 .search,
@@ -129,23 +130,59 @@ button {
   background-color: var(--color-bg);
 
   display: grid;
-  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template: 40vh 1fr / 3fr 1fr;
 }
 
-.projects,
-.announcements,
-.trending {
+.projects>*+*,
+.announcements>*+*,
+.trending>*+* {
+  padding: 20px;
 }
 
 .projects {
   grid-row: 1 / -1;
 
   display: grid;
-  grid-template: 1fr 1fr 1fr / repeat(auto-fit, minmax(260px, 1fr)) ;
+  grid-template: 30px repeat(3, 220px) / repeat(auto-fit, minmax(360px, 1fr)) ;
+  grid-auto-rows: 230px;
+}
+
+.proj-title {
+  grid-column: 1 / -1;
+  margin: 20px;
 }
 
 .project-card {
-  height: 250px;
+  background-color: white;
+  border-left: 10px #14b8a6 solid;
+  margin: 20px;
+  border-radius: 9px;
 }
 
 
+
+
+
+.announcements,
+.trending {
+  display: grid;
+  grid-template-rows: 30px 1fr;
+}
+
+.announcements-title,
+.announcements-card,
+.trending-title,
+.trending-card {
+  margin-top: 20px;
+}
+
+.announcements-card,
+.trending-card {
+  border-radius: 9px;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.trending-card {
+  margin-bottom: 44px;
+}
