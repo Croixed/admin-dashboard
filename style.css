@@ -134,7 +134,7 @@ button {
   background-color: var(--color-bg);
 
   display: grid;
-  grid-template: 40vh 1fr / 3fr 1fr;
+  grid-template: 40vh 1fr / 1fr 260px; /*3fr 1fr; */
 }
 
 .projects>*+*,
@@ -195,11 +195,21 @@ button {
 
 .announcements-card,
 .trending-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   border-radius: 9px;
   background-color: white;
   margin-right: 20px;
 }
 
+.announcement-title {
+  font-weight: bold;
+}
+
+.announcement-text {
+  font-size: 0.9em;
+}
 
 
 .trending-card {
